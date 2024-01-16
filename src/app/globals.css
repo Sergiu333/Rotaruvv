@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&display=swap');
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -25,3 +27,13 @@
 /*    )*/
 /*    rgb(var(--background-start-rgb));*/
 /*}*/
+
+
+.bg-hero {
+  background-image: url("/bg_hero.jpg");
+  background-repeat: no-repeat, repeat;
+  background-color: black;
+  background-size: cover;
+  color: white;
+  height: 100vh;
+}
