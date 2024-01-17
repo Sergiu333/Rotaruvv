@@ -21,7 +21,7 @@
 // export default Header;
 
 'use client'
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -47,7 +47,17 @@ const Header = () => {
         >
             <div className="px-5 xs:px-14 sm:px-24 md:px-32 lg:px-44 xl:px-48 2xl:px-56 3xl:px-[344px] bg-transparent h-[70px] py-[16px] lg:py-[30px] 2xl:py-[55px] flex flex-row justify-center items-center">
                 <div className="flex flex-row gap-[40px]">
-                    <div className="block lg:hidden">logo</div>
+                    <div className="relative block lg:hidden">
+                        <div className="relative z-[999] w-[200px] h-[50px] lg:h-[80px]">
+                            <Image src="/Rotaruvv-logo.svg"
+                                   alt=""
+                                   fill
+                                   objectFit="contain"
+                                   sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw,(max-width: 1536px) 33vw, 25vw"
+                                   style={{ transform: "translate3d(0, 0, 0)" }}
+                            />
+                        </div>
+                    </div>
                     <div className="flex flex-row items-center justify-between hidden lg:flex">
                         <div className="flex flex-row gap-[10px] md:gap-[20px] lg:gap-[50px] 3xl:gap-[100px] text-lg text-[#FFFFFFB2]">
                             <div>Portfolio</div>
@@ -65,7 +75,7 @@ const Header = () => {
                         <div
                             className={`${
                                 hamburgerOpen && width <= 1024
-                                    ? 'fixed flex flex-col bg-[#1B1B1B] top-0 right-0 bottom-0 w-3/5 py-[50px] justify-center items-center gap-6 -mt-[400px]'
+                                    ? 'fixed flex flex-col bg-[black] top-0 right-0 bottom-0 w-full py-[50px] justify-center items-center gap-6 -mt-[400px]'
                                     : 'relative grid-cols-4 hidden lg:flex lg:gap-[35px] flex items-center'
                             }`}
                         >
