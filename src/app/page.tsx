@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="bg-hero h-[100vh] relative">
       <Header/>
-        {/*<Hero/>*/}
+        <Hero/>
     </div>
   )
 }
