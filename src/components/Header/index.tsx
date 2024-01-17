@@ -79,7 +79,14 @@ const Header = () => {
                                     : 'relative grid-cols-4 hidden lg:flex lg:gap-[35px] flex items-center'
                             }`}
                         >
-                            <div className="block lg:hidden">aici</div>
+                            <div className="block lg:hidden">
+                                <div className="flex flex-col gap-2 text-lg text-[#FFFFFFB2]">
+                                    <div>Portfolio</div>
+                                    <div>Info</div>
+                                    <div>About me</div>
+                                    <div>Contact</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
