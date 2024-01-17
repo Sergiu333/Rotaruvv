@@ -2,7 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+  font-family: 'Moniqa';
+  src: url('/CYR_CT_OP_Emberly Regular [wdth,wght]-VF.ttf') format('truetype');
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -36,4 +41,26 @@
   background-size: cover;
   color: white;
   height: 1104px;
+}
+
+
+.hero-text {
+  color: #FFFFFF;
+  font-family: Moniqa, serif;
+  font-size: 127px;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 17.145px;
+  text-transform: uppercase;
+  padding-top: 58px;
+}
+
+.hero-text_bottom {
+  color: #FFF;
+  font-family: Moniqa, serif;
+  font-size: 127px;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 17.145px;
+  text-transform: uppercase;
 }
