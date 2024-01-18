@@ -41,7 +41,7 @@ const Header = () => {
 
     return (
         <header
-            className={`px-5 xs:px-14 sm:px-24 md:px-32 lg:px-44 xl:px-48 2xl:px-56 3xl:px-[344px] fixed top-0 pt-5 h-[130px] left-0 z-[999] w-full transition-colors delay-100 ${
+            className={`px-5 xs:px-14 sm:px-24 md:px-32 lg:px-44 xl:px-48 2xl:px-56 3xl:px-[344px] fixed top-0 lg:pt-5 lg:h-[130px] left-0 z-[999] w-full transition-colors delay-100 ${
                 scrollY > 80 ? 'bord er-b border-b-white/[30%] bg-black' : 'bg-transparent'
             }`}
         >
